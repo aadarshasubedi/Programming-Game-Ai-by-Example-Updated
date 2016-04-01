@@ -1,18 +1,23 @@
-﻿Build started 3/19/2016 5:22:38 PM.
-     1>Project "C:\Users\Jacksonn\Documents\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\WestWorld-Switch.vcxproj" on node 2 (Build target(s)).
+﻿Build started 20/03/2016 14:34:37.
+     1>Project "E:\Documentos\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\WestWorld-Switch.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib WestWorld.cpp WindowScreen.cpp
+         F:\Programas\Visual Studio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib WestWorld.cpp WinApp.cpp WindowScreen.cpp
          WestWorld.cpp
+     1>e:\documentos\git\programming-game-ai-by-example-updated\state machines\westworld-switch\WindowScreen.h(120): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         WinApp.cpp
+     1>e:\documentos\git\programming-game-ai-by-example-updated\state machines\westworld-switch\WindowScreen.h(120): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
          WindowScreen.cpp
-     1>WindowScreen.cpp(23): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+     1>e:\documentos\git\programming-game-ai-by-example-updated\state machines\westworld-switch\WindowScreen.h(120): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>WindowScreen.cpp(32): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jacksonn\Documents\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\WestWorldSwitch.WindowScreen.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jacksonn\Documents\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\WestWorld.obj
+         F:\Programas\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documentos\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\WestWorldSwitch.WindowScreen.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documentos\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\WinApp.obj
+         Debug\WestWorld.obj
          Debug\WindowScreen.obj
          "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         WestWorld-Switch.vcxproj -> C:\Users\Jacksonn\Documents\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.exe
-     1>Done Building Project "C:\Users\Jacksonn\Documents\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\WestWorld-Switch.vcxproj" (Build target(s)).
+         WestWorld-Switch.vcxproj -> E:\Documentos\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\Debug\WestWorld-Switch.exe
+     1>Done Building Project "E:\Documentos\Git\Programming-Game-Ai-by-Example-Updated\State Machines\WestWorld-Switch\WestWorld-Switch.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.28
+Time Elapsed 00:00:02.86

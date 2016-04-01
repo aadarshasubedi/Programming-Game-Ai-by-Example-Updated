@@ -1,23 +1,32 @@
 #include "WindowScreen.h"
+#include "WinApp.h"
 #include "WestWorld.h"
-#include "Test.h"
-
-
 using namespace System;
 using namespace System::Windows::Forms;
 using namespace System::Threading;
 
-void hum()
-{
 
-	for (int i = 0; i < 50; i++)
+void runWestWorld()
+{
+	WestWorld westWorld;
+	westWorld.init();
+
+	while (true)
 	{
-		if (i == 50)
-		{
-			int a = 2;
-		}
+		westWorld.update();
+		System::Threading::Thread::Sleep(1000);
 	}
 }
+
+void ajustHeightList()
+{	
+	while (true)
+	{
+		WinApp::getInstance()->ajustHeightList();
+		System::Threading::Thread::Sleep(50);
+	}
+}
+
 [STAThread]
 void main(array<String^>^ args)
 {
@@ -25,16 +34,15 @@ void main(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	WestWorldSwitch::WindowScreen windowScreen;
 
-	Test^ oh = Test::getInstance();
-	oh->setScreen(%windowScreen);
-	oh->printeee("hidfhsadhh");
+	WinApp^ winApp = WinApp::getInstance();
+	winApp->setScreen(%windowScreen);
 
-	WestWorld* westWorld = new WestWorld();
-	westWorld->init();
-	
 
-	Thread^ workerthread = gcnew Thread(gcnew ThreadStart(hum));
-	workerthread->Start();
+	Thread^ stateMachineThread = gcnew Thread(gcnew ThreadStart(runWestWorld));
+	stateMachineThread->Start();
+
+	Thread^ ajustHeightSthread = gcnew Thread(gcnew ThreadStart(ajustHeightList));
+	ajustHeightSthread->Start();
 
 	Application::Run(%windowScreen);
 }

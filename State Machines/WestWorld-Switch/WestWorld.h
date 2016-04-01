@@ -1,5 +1,5 @@
 #pragma once
-#include "Test.h"
+#include "WinApp.h"
 #include <iostream>
 #include <string>
 

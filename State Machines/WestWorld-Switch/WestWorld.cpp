@@ -18,7 +18,7 @@ void WestWorld::createMiner()
 
 void WestWorld::showMessage(std::string message)
 {
-	Test::getInstance()->printeee(message);
+	WinApp::getInstance()->addMensageToList(message);
 }
 
 void WestWorld::init()
@@ -44,7 +44,7 @@ void WestWorld::update()
 		// Se o nimerador não estiver cansado ele volta ao trabalho
 		if (miner.levelTiredness <= maxTiredness) 
 		{
-			showMessage("Estou bme descansado, Hora de procurar por mais ouro!");
+			showMessage("Estou bem descansado, Hora de procurar por mais ouro!");
 			miner.currentState = excavatingAtMine;
 
 			//EXIT do estado
@@ -80,6 +80,8 @@ void WestWorld::update()
 		// Se o mineiro estiver com o bolso cheio, ele vai o ouro no banco
 		if (miner.qtdGoldCarried >= maxNuggets) 
 		{
+			miner.currentState = depositingGoldAtBank;
+
 			//EXIT do estado
 			showMessage("Deixando a mina!");
 			break;

@@ -78,11 +78,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="WinApp.cpp" />
     <ClCompile Include="WestWorld.cpp" />
     <ClCompile Include="WindowScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h" />
+    <ClInclude Include="WinApp.h" />
     <ClInclude Include="WestWorld.h" />
     <ClInclude Include="WindowScreen.h">
       <FileType>CppForm</FileType>

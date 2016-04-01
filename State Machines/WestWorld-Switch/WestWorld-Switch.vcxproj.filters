@@ -21,6 +21,9 @@
     <ClCompile Include="WestWorld.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WinApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WindowScreen.h">
@@ -29,7 +32,7 @@
     <ClInclude Include="WestWorld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Test.h">
+    <ClInclude Include="WinApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
